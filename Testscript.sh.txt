@@ -1,0 +1,22 @@
+
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/040423_evening
+[ec2-user@ip-172-31-33-20 040423_evening]$ cd Katrina
+[ec2-user@ip-172-31-33-20 Katrina]$ touch testscript.sh
+[ec2-user@ip-172-31-33-20 Katrina]$ nano testscript.sh
+
+#!/bin/bash
+
+Echo "your name is: $USER"
+Echo "your working directory is: $PWD"
+Echo "number of users: $ssh_processes"
+Echo "done"
+
+
+[ec2-user@ip-172-31-33-20 Katrina]$ chmod
+[ec2-user@ip-172-31-33-20 Katrina]$ ls -l
+total 8
+-rwxr--r-- 1 ec2-user ec2-user 221 May 15 19:27 script.sh
+-rw-rw-r-- 1 ec2-user ec2-user 131 May 22 16:28 testscript.sh
+[ec2-user@ip-172-31-33-20 Katrina]$ chmod g-r testscript.sh
+[ec2-user@ip-172-31-33-20 Katrina]$ chmod a-x testscript.sh
+[ec2-user@ip-172-31-33-20 Katrina]$ mv testscript.sh .testscript.sh
